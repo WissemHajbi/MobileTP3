@@ -60,11 +60,11 @@ public class MainActivity extends AppCompatActivity {
                 String valmesure = (ETValMes.getText().toString());
                 System.out.println("val =" + valmesure);
                 if (age == 0 && valmesure.isEmpty()) {
-                    Toast.makeText("Age and valeur mesure invalide", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), "Age and valeur mesure invalide", Toast.LENGTH_SHORT).show();
                 } else if (age == 0) {
-                    Toast.makeText("Age invalide", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), "Age invalide", Toast.LENGTH_SHORT).show();
                 } else if (valmesure.isEmpty()) {
-                    Toast.makeText("Valeur mesure invalide", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), "Valeur mesure invalide", Toast.LENGTH_SHORT).show();
                 } else {
                     float valMes = Float.parseFloat(valmesure);
                     boolean jeun = BtnOui.isChecked();
